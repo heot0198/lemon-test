@@ -65,7 +65,7 @@ routes.get('/logout', isAllowed, (req, res) => {
 
 routes.get('/builder', isAllowed, (req, res) => {
     res.render('builder', {
-        myPort: CONST.control_port
+        myPort: process.env.CPORT
     });
 });
 
