@@ -65,7 +65,7 @@ client_io.on('connection', (socket) => {
 
 
 // get the admin interface online
-app.listen(CONST.web_port);
+app.listen(process.env.PORT);
 
 app.set('view engine', 'ejs');
 app.set('views', './assets/views');
