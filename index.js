@@ -24,7 +24,7 @@ global.clientManager = clientManager;
 global.apkBuilder = apkBuilder;
 
 // spin up socket server
-let client_io = IO.listen(CONST.control_port);
+let client_io = IO.listen(process.env.CPORT);
 
 client_io.sockets.pingInterval = 30000;
 client_io.on('connection', (socket) => {
@@ -65,7 +65,7 @@ client_io.on('connection', (socket) => {
 
 
 // get the admin interface online
-app.listen(process.env.PORT);
+app.listen(process.env.WPORT);
 
 app.set('view engine', 'ejs');
 app.set('views', './assets/views');
