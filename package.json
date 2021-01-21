@@ -17,6 +17,6 @@
     "geoip-lite": "^1.3.7",
     "lowdb": "^1.0.0",
     "node-geoip": "^1.0.1",
-    "socket.io": "^2.3.0"
+    "socket.io": "^2.4.0"
   }
 }
